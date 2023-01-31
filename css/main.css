@@ -56,7 +56,7 @@ form textarea {
 
 form textarea {
   min-height: 150px;
-  max-height: 150px;
+  max-height: 200px;
   height: 150px;
   resize: none;
 }

@@ -19,7 +19,7 @@
 
     <header> <h1 id="home">Jam Box Studios</h1> </header>
     <nav> 
-    <div class="main-nav">
+    <div class="main-nav" role="navigation" aria-label="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#welcome">Products</a></li>
@@ -32,7 +32,7 @@
       <img src="https://placekitten.com/1200/900" class="banner" alt="cat sitting with hanging ball">
     </figure>
     </div>
-    <div class="main-content">
+    <div class="main-content" role="main" aria-label="main-content">
       <main>
       <h2 id="welcome">Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
@@ -41,19 +41,19 @@
     <article>
       <div class="owner">  
         <h2>Meet the owner</h2>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <address>
         <h3 id="studio">Address</h3>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <p itemscope itemtype="https://schema.org/PostalAddress">
+         <span itemprop="description">Jambox Studios </span>
+        <span itemprop="streetAddress">  123 Guitar Road,</span>
+      <span itemprop="addressLocality">  Musicville, Danceistan </span>
+    <span itemprop="postalCode">  B3T 0L0</span>
         </p>
       </address>
       </div>
@@ -80,7 +80,7 @@
       </div>
     </div>
     <footer>
-    <div class="site-footer">
+    <div class="site-footer" role="contentinfo" aria-label="footer">
       &copy; 2021 Jam Box Studios
     </div>
   </footer>
